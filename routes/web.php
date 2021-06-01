@@ -21,3 +21,15 @@ Route::get('/articles/detail/{id}', [ArticleController::class, 'detail']);
 
 Route::get('/articles/more', function() {
     return redirect('/articles/detail');});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
